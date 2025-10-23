@@ -1,0 +1,13 @@
+.hero { background:#eef2ff; border:1px solid #c7d2fe; min-height:120px; padding: 5px;}
+@media (max-height: 700px)  {  
+  .hero {
+    padding: 15px;
+  }
+}
+
+@media (max-height: 500px) {  
+  .hero {
+    padding: 30px;
+  }
+}
+
