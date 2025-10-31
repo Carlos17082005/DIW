@@ -1,0 +1,14 @@
+.grid {
+  display:flex;
+  flex-wrap:wrap;
+  box-sizing:border-box;
+  background-color: aqua;
+}
+.card {
+  margin: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(33.333% - 16px); /* calcula pensando en márgenes laterales de 8px */
+  min-height: 100px;
+  background:#fff;
+}

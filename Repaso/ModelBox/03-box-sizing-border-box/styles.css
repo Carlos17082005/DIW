@@ -1,0 +1,10 @@
+.row { display:flex; gap:24px; flex-wrap:wrap; }
+.demo { width:300px; background:#ecfeff; border:10px solid #22d3ee; }
+.content-box  {
+    padding: 20px;
+    box-sizing: content-box;
+}
+.border-box  {
+    padding: 20px;
+    box-sizing: border-box;
+}
