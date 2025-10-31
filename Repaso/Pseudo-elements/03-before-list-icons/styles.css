@@ -1,0 +1,17 @@
+.features { list-style:none; padding:0; }
+.features li { padding-left:24px; position:relative; margin:8px 0; }
+li {
+margin-bottom: 9px;
+list-style-type: none;
+}
+
+li::before {
+display: inline-block;
+content:'';
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 6px 0 6px 10px;
+border-color: transparent transparent transparent #007bff;
+margin-right: 10px;
+}
