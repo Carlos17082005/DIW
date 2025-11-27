@@ -1,0 +1,110 @@
+/*
+  Licencia: CC BY-SA 4.0
+  Autor: Carlos Gabriel Garcia Guzman
+  Año: 2025
+  https://creativecommons.org/licenses/by-sa/4.0/
+*/
+
+/* PRÁCTICA 1 - STARTER
+   Objetivo: añadir estilos CSS3 para la galería y hacerla responsive.
+*/
+
+/* TODO: definir tipografía base, colores, etc. */
+:root {
+  --color-bg: #f7f7f7;
+  --color-primary: #005f99;
+  --color-text: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* TODO: maquetar cabecera con logo */
+.site-header {
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.gallery h2 {
+  margin-bottom: 1rem;
+}
+
+/* TODO: usar grid para la galería */
+.gallery-grid {
+  display: grid; /* Por defecto: el alumnado lo cambiará a grid o flex */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* Organiza todo en columnas */
+  gap: 1rem;
+}
+
+/* TODO: estilos de las figuras e imágenes (borde, sombra, transición, etc.) */
+.gallery-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  overflow: hidden;  /* Evita que se vean las esquinas superiores de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Animacion */
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;  /* Animacion */
+}
+
+.gallery-item:hover {  /* Al pasar el raton */
+  transform: scale(1.03);  /* Aumeta el tamaño, transition se ocupa de cuanto tarda y el efecto de suavidad */
+}
+
+/* TODO: hacer la galería responsive usando media queries */
+@media (max-width: 600px) { /* Movil */
+  .gallery-grid {
+    grid-template-columns: 1fr;  /* La columna ocupa todo el contenedor */
+    gap: 0.5rem; /* Reduce el tamaño entre las filas */
+  }
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Tabla con borde */
+table, th, td, tr { border: 1px solid black; border-collapse: collapse; }
+td, th { padding: 0px 10px; }
+
+img { width: 150px; }
