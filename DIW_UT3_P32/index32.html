@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 2 - Audio y Vídeo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style32.css" />
+</head>
+<body>
+
+  <!-- Boton tema -->
+  <button class="modo" onclick="document.body.classList.toggle('light')">Tema</button>
+
+  <header class="site-header">
+    <h1>Práctica 2 · Audio y Vídeo HTML5</h1>
+  </header>
+
+  <main class="layout">
+    <section class="media-card">
+      <h2>Audio de muestra</h2>
+      <!-- TODO: enlazar a vuestros archivos de audio -->
+      <audio controls>
+        <source src="media/audio-demo.mp3" type="audio/mpeg" />
+        <source src="media/audio-demo.ogg" type="audio/ogg" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+
+      <p class="note">
+        Explica aquí cómo has editado y exportado el audio (formatos, bitrate,...).
+        <br><br>
+        Lo primero que he hecho es abrir mi archivo de audio que queria editar, luego seleccione el fragmento de audio que 
+        queria usar ed unos 30 segundos, lo corte usando CTRL + X o desde la pestaña de edicion, luego seleccione el resto 
+        del audio con CTRL + A y lo elimine desde la pestaña de edicion (tambien se puede usar CTRL + K), y pegue el audio 
+        que habia cortado antes. Ahora desde la pestaña de "Efecto -> Volumen y comprecion -> Normalizar" pude normalizar 
+        audio seleccionado.<br>
+        Para exportarlo, lo hise desde la pestaña de "Archivo -> Exportar audio" o udando CTRL + Shift + E, y selecciono el 
+        nombre, la ruta de guardado y el formato, tambien puedes escojer el tipo de audio, la frecuencia,  la calidad y el 
+        rango de exportacion, le di a exportar y listo.
+        <br><br>
+        El archivo MP3 usa un códec más antiguo y menos eficiente, por lo que necesita bitrates más altos para mantener buena
+        calidad. El formato OGG usa un códec más moderno y eficiente, por lo que ofrece mayor calidad con bitrates un poco mas
+        bajos. Por eso, a igual duración, el archivo OGG ocupa menos espacio y conserva mejor la calidad que el MP3, aunque 
+        el MP3 es mucho más compatible.<br>
+        En mi caso, los audios que hemos editado, el audio en formato MP3 pesa mas (580 KB), mientras que el audio con formato
+        OGG pesa menos (484 KB).
+      </p>
+    </section>
+
+    <section class="media-card">
+      <h2>Vídeo de muestra</h2>
+      <!-- TODO: enlazar a vuestros archivos de vídeo -->
+      <video controls poster="img/poster-video.jpg">
+        <source src="media/video-demo.mp4" type="video/mp4" />
+        <source src="media/video-demo.webm" type="video/webm" />
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+
+      <p class="note">
+        Describe los cambios realizados en el vídeo y la diferencia de peso entre formatos.
+        <br><br>
+        Lo que hise fue importar el video orginal y con click derecho lo recorte seleccionado el punto de inicio y el punto de 
+        fin, luego lo añadi a una de las pistas, y cree el titulo el la pestaña de titulos, nuevo titulo, seleccione una plantilla
+        escribi lo que queria, y le di a hecho y lo añadi a una de las pistas, con los elementos en las pistas los puedes colocar 
+        como quieras enla pantalla, elegir cuando aparecen y cuando desaparecen, y porner transiciones, para ello desde la pestaña 
+        de transiciones escoji una transicion que venia con el programa y y las añadi en las pistas y elementos que queria que 
+        tuvieran esa transicion, lo acomode todo en las pistas para que quedara como yo queria, y lo exporte con el boton de exportar.
+        <br>Para exportarlo, le di al boton, seleccione el nombre, la ruta de guardado y el "objetivo" que es el formato asi como la 
+        calidad y el perfil de video que nos dice el tamaño, los fps, etc. Tambien se puede elejir un perfil que es por si nuestro 
+        objetivo es grabar el video en un DVD o es para web, le di a exportar video, espere que se renderisara y listo.
+        <br><br>
+        El archivo MP4 tiene buena calidad y es un estandar muy usado tiene una comprecion solida pero no muy eficiente, ya que usa 
+        un códec más antiguo y menos eficiente, por lo que necesita bitrates más altos para mantener buena calidad. El formato WEMB
+        usa un códec más moderno y eficiente, por lo que ofrece mayor calidad con bitrates mucho mas bajos. Por eso, a igual duración,
+        el archivo WEMB ocupa menos espacio y conserva mejor la calidad que el MP4.<br>
+        En mi caso, los videos que hemos editado, el video en formato MP4 pesa mas (36.5 MB), mientras que el video con formato
+        WEMB pesa menos (6.76 MB).
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>

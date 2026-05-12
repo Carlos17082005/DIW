@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 3.3 - Animaciones simples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style33.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Práctica 3.3 · Animaciones simples</h1>
+    <p class="subtitle">
+      GIF animado + animaciones básicas con CSS3
+    </p>
+  </header>
+
+  <main class="layout">
+    <!-- Sección GIF -->
+    <section class="card">
+      <h2>1. GIF animado</h2>
+      <p>
+        Crea un GIF animado a partir de varias imágenes fijas
+        y sustitúyelo en el siguiente bloque:
+      </p>
+      <div class="gif-wrapper">
+        <!-- TODO: sustituir ruta por el GIF creado -->
+        <img src="gif/mi-animacion.gif" alt="GIF" class="gif-image" />
+      </div>
+      <p class="note">
+        File size: 137KiB, width: 400px, height: 400px, frames: 7, type: gif, length: 00:00:00.7
+        <br><br>
+        Lo primero que he hecho para crear el GIF ha sido buscar una hoja de sprites y 
+        recorte cada frame con GIMP, luego los subi todos a la herramienta web 
+        <a href="https://ezgif.com/maker">GIF Maker</a>. Una vez en la pagina, subi todos 
+        los frames de mi GIF en orden, estableci un delay para cada uno de los frames de 
+        10 y un delay time para toda la animacion de 10 (5.00 FPS); y ya esta listo, ahora 
+        solo tuve que darle a el boton "Make a GIF!" y descargarlo.
+      </p>
+    </section>
+
+    <!-- Sección animación hover botón -->
+    <section class="card">
+      <h2>2. Animación hover con CSS</h2>
+      <p>
+        Diseña un botón con una animación suave al pasar el ratón
+        (cambios de color, tamaño, posición, etc.).
+      </p>
+      <button class="btn-animado">
+        Pasa el ratón por aquí
+      </button>
+    </section>
+
+    <!-- Sección animación continua -->
+    <section class="card">
+      <h2>3. Animación continua con @keyframes</h2>
+      <p>
+        Crea una animación continua (por ejemplo un icono que late o una burbuja
+        que se desplaza) usando la propiedad <code>animation</code>.
+      </p>
+      <div class="anim-demo">
+        <div class="burbujita"></div>
+        <p class="note">
+          La burbujita debe moverse o cambiar de tamaño de forma infinita
+          mediante una animación CSS.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección comparativa GIF vs CSS -->
+    <section class="card">
+      <h2>4. Comparativa GIF vs CSS</h2>
+      <p>
+        Lo ideal es usar GIF cuando lo que queremos representar es muy complejo o es 
+        algun clip de un video o similar, miestras que las animaciones de CSS lo ideal
+        es usarlas para elementos de la interfaz mas sencillos. En general las animaciones 
+        CSS tienen un mayor rendimiento y al tratace de imagenes vectoriales no pierden 
+        resolucion, tambien permiten un control total sobre la animacion en tiempo real.
+        Por todo esto, podemos decir que las animaciones de CSS son mucho mas accecibles
+        que los GIFs ya que nos ofrecen control total sobre la misma y no es nesesario
+        cargar arcgivos para su funcionamiento y asi siendo mas eficietes.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>DAW · DIW · RA3 - Práctica 3.3 </p>
+  </footer>
+</body>
+</html>
